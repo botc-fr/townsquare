@@ -13,16 +13,16 @@ register.setDefaultLabels({
 const PING_INTERVAL = 30000; // 30 seconds
 
 const server = https.createServer({
-  cert: fs.readFileSync("cert.pem"),
-  key: fs.readFileSync("key.pem")
+  cert: fs.readFileSync("certificate.pem"),
+  key: fs.readFileSync("privatekey.pem")
 });
 const wss = new WebSocket.Server({
   ...(process.env.NODE_ENV === "development" ? { port: 8081 } : { server }),
-  verifyClient: info =>
-    info.origin &&
-    !!info.origin.match(
-      /^https?:\/\/([^.]+\.github\.io|localhost|clocktower\.online|eddbra1nprivatetownsquare\.xyz)/i
-    )
+//   verifyClient: info =>
+//     info.origin &&
+//     !!info.origin.match(
+//       /^https?:\/\/([^.]+\.github\.io|localhost|clocktower\.online|eddbra1nprivatetownsquare\.xyz)/i
+//     )
 });
 
 function noop() {}
