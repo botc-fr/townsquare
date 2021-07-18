@@ -105,7 +105,7 @@ export default {
       scripts: [
         [
           "Deadly Penance Day",
-          "https://gist.githubusercontent.com/bra1n/0337cc44c6fd2c44f7589256ed5486d2/raw/16be38fa3c01aaf49827303ac80577bdb52c0b25/penanceday.json"
+          "https://gist.githubusercontent.com/david-urvoy/5cbf2a6dacf8b678cca2952c2b3c5f10/raw/e3fa9c422909b5c7a8713295fa2f1207faa23116/dpd-roles.json"
         ],
         [
           "Catfishing 11.1",
